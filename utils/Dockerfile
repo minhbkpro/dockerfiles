@@ -8,6 +8,8 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
     zlib1g-dev \
     libicu-dev \
     g++ \
+    curl \
+    wget \
     git \
     php \
     php-intl \
@@ -16,7 +18,8 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
     php-zip \
     php-curl \
     composer \
-    curl
+    nodejs \
+    npm
 
 # install codeception
 RUN curl -LsS https://codeception.com/codecept.phar -o /usr/local/bin/codecept
