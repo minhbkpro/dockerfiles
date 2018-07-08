@@ -1,6 +1,4 @@
-ARG version
-
-FROM davert/selenium-env
+FROM ubuntu
 
 WORKDIR /usr/src/www
 
