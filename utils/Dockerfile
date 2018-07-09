@@ -12,6 +12,7 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
     wget \
     git \
     php \
+    php-mysql \
     php-intl \
     php-mbstring \
     php-simplexml \
