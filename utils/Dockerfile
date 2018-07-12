@@ -18,12 +18,12 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
     php-simplexml \
     php-zip \
     php-curl \
-    composer
+    composer \
+    nodejs \
+    npm
 
-# install node, npm, webpack
-RUN curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
-RUN apt-get install -y nodejs
-RUN npm install -g webpack webpack-cli --no-optional
+# update latest node and npm version
+RUN npm install -g n && n stable
 
 # install codeception
 RUN curl -LsS https://codeception.com/codecept.phar -o /usr/local/bin/codecept
