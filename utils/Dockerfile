@@ -23,7 +23,7 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
     npm
 
 # update latest node and npm version
-RUN npm install -g n && n stable
+RUN npm install -g n && n stable && npm install -g webpack webpack-cli
 
 # install codeception
 RUN curl -LsS https://codeception.com/codecept.phar -o /usr/local/bin/codecept
