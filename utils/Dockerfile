@@ -21,7 +21,9 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
     composer \
     nodejs \
     npm \
-    ruby-dev
+    ruby \
+    ruby-dev \
+    build-essential
 
 # update latest node and npm version
 RUN npm install -g n && n stable && npm install -g webpack webpack-cli
