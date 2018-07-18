@@ -20,7 +20,8 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
     php-curl \
     composer \
     nodejs \
-    npm
+    npm \
+    ruby-dev
 
 # update latest node and npm version
 RUN npm install -g n && n stable && npm install -g webpack webpack-cli
@@ -28,3 +29,9 @@ RUN npm install -g n && n stable && npm install -g webpack webpack-cli
 # install codeception
 RUN curl -LsS https://codeception.com/codecept.phar -o /usr/local/bin/codecept
 RUN chmod a+x /usr/local/bin/codecept
+
+# install laravel installer
+RUN composer global require "laravel/installer"
+
+# install jekyll
+RUN gem install bundler jekyll
