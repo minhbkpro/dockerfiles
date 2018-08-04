@@ -38,3 +38,8 @@ RUN composer global require "laravel/installer"
 
 # install jekyll
 RUN gem install bundler jekyll
+
+# flutter SDK, you need to have flutter SDK on source code folder
+RUN export PATH=`pwd`/flutter/bin:$PATH
+
+CMD ["/bin/bash"]
