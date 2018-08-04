@@ -23,7 +23,8 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
     npm \
     ruby \
     ruby-dev \
-    build-essential
+    build-essential \
+    unzip
 
 # update latest node and npm version
 RUN npm install -g n && n stable && npm install -g webpack webpack-cli
