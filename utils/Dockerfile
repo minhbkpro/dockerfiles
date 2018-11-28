@@ -18,6 +18,7 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
     php-simplexml \
     php-zip \
     php-curl \
+    php-gd \
     composer \
     nodejs \
     npm \

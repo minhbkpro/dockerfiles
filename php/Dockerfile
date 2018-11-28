@@ -6,6 +6,7 @@ RUN apt-get update
 RUN DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
     zlib1g-dev \
     libicu-dev \
+    libpng-dev \
     g++
 
 RUN docker-php-ext-install \
