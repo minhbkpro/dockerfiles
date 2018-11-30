@@ -7,6 +7,10 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
     apt-utils \
     zlib1g-dev \
     libicu-dev \
+    libcairo2-dev \
+    libjpeg-dev \
+    libgif-dev \
+    libpng-dev \
     g++ \
     curl \
     wget \
