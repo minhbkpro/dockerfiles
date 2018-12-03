@@ -19,3 +19,5 @@ RUN docker-php-ext-install \
     intl \
     zip \
     gd
+
+CMD ["chown -R www-data:www-data .", "chmod 775 -R ."]
