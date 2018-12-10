@@ -4,32 +4,32 @@ WORKDIR /usr/src/www
 
 RUN apt-get update
 RUN DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
-    apt-utils \
-    zlib1g-dev \
-    libicu-dev \
-    libcairo2-dev \
-    libjpeg-dev \
-    libgif-dev \
-    libpng-dev \
-    g++ \
-    curl \
-    wget \
-    git \
-    php \
-    php-mysql \
-    php-intl \
-    php-mbstring \
-    php-simplexml \
-    php-zip \
-    php-curl \
-    php-gd \
-    composer \
-    nodejs \
-    npm \
-    ruby \
-    ruby-dev \
-    build-essential \
-    unzip
+  apt-utils \
+  zlib1g-dev \
+  libicu-dev \
+  libcairo2-dev \
+  libjpeg-dev \
+  libgif-dev \
+  libpng-dev \
+  g++ \
+  curl \
+  wget \
+  git \
+  php \
+  php-mysql \
+  php-intl \
+  php-mbstring \
+  php-simplexml \
+  php-zip \
+  php-curl \
+  php-gd \
+  composer \
+  nodejs \
+  npm \
+  ruby \
+  ruby-dev \
+  build-essential \
+  unzip
 
 # update latest node and npm version
 RUN npm install -g n && n stable && npm install -g webpack webpack-cli

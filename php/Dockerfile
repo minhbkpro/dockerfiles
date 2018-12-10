@@ -4,20 +4,18 @@ WORKDIR /usr/src/www
 
 RUN apt-get update
 RUN DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
-    zlib1g-dev \
-    libicu-dev \
-    libcairo2-dev \
-    libjpeg-dev \
-    libgif-dev \
-    libpng-dev \
-    g++
+  zlib1g-dev \
+  libicu-dev \
+  libcairo2-dev \
+  libjpeg-dev \
+  libgif-dev \
+  libpng-dev \
+  g++
 
 RUN docker-php-ext-install \
-    mysqli \
-    pdo \
-    pdo_mysql \
-    intl \
-    zip \
-    gd
-
-CMD ["chown -R www-data:www-data .", "chmod 775 -R ."]
+  mysqli \
+  pdo \
+  pdo_mysql \
+  intl \
+  zip \
+  gd
