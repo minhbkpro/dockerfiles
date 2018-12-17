@@ -2,6 +2,7 @@ FROM php:7.2-fpm
 
 WORKDIR /usr/src/www
 
+RUN rm /etc/apt/preferences.d/no-debian-php
 RUN apt-get update
 RUN DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
   zlib1g-dev \
