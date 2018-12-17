@@ -10,7 +10,9 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
   libjpeg-dev \
   libgif-dev \
   libpng-dev \
-  g++
+  libxml2-dev \
+  g++ \
+  php-soap
 
 RUN docker-php-ext-install \
   mysqli \
@@ -18,4 +20,5 @@ RUN docker-php-ext-install \
   pdo_mysql \
   intl \
   zip \
-  gd
+  gd \
+  soap
