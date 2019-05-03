@@ -1,6 +1,7 @@
 FROM php:7.2-fpm
 
 WORKDIR /usr/src/www
+RUN chown -R www-data:www-data /usr/src/www
 
 RUN rm /etc/apt/preferences.d/no-debian-php
 RUN apt-get update
