@@ -1,5 +1,6 @@
 FROM ubuntu
 
+USER www-data
 WORKDIR /usr/src/www
 
 RUN apt-get update
