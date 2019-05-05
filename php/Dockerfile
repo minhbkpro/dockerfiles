@@ -1,6 +1,5 @@
 FROM php:7.2-fpm
 
-USER root
 WORKDIR /usr/src/www
 
 RUN rm /etc/apt/preferences.d/no-debian-php
@@ -24,5 +23,3 @@ RUN docker-php-ext-install \
   zip \
   gd \
   soap
-
-CMD ["/bin/bash"]
