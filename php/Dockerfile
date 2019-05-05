@@ -13,7 +13,8 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
   libpng-dev \
   libxml2-dev \
   g++ \
-  php-soap
+  php-soap \
+  procps
 
 RUN docker-php-ext-install \
   mysqli \
